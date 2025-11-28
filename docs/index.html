@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The DevOps Student List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <div class="container">
-        <header>
-            <h1>The DevOps Student List</h1>
-        </header>
+      <header>
+        <h1>The DevOps Student List</h1>
+      </header>
 
-        <table class="student-table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Student ID</th>
-                    <th>Name Surname</th>
-                    <th>Nickname</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Example Student 1 -->
-                <tr>
-                    <td data-label="Avatar" class="avatar-cell">
-                        <img src="assets/profile.jpg" alt="Donald Trump Avatar" class="avatar-img">
-                    </td>
-                    <td data-label="Student ID">672115018</td>
-                    <td data-label="Name Surname">Dalanphop Keawsiripong</td>
-                    <td data-label="Nickname">Hush</td>
-                </tr>
+      <table class="student-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Student ID</th>
+            <th>Name Surname</th>
+            <th>Nickname</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example Student 1 -->
+          <tr>
+            <td data-label="Avatar" class="avatar-cell">
+              <img
+                src="assets/trump_real.jpg"
+                alt="Donald Trump Avatar"
+                class="avatar-img"
+              />
+            </td>
+            <td data-label="Student ID">6501000001</td>
+            <td data-label="Name Surname">Donald Trump</td>
+            <td data-label="Nickname">Donny</td>
+          </tr>
 
-                <!-- Example Student 2 -->
-                <tr>
-                    <td data-label="Avatar" class="avatar-cell">
-                        <img src="assets/lisa_real.jpg" alt="Lisa Blackpink Avatar" class="avatar-img">
-                    </td>
-                    <td data-label="Student ID">6501000002</td>
-                    <td data-label="Name Surname">Lalisa Manobal</td>
-                    <td data-label="Nickname">Lisa</td>
-                </tr>
+          <!-- Example Student 2 -->
+          <tr>
+            <td data-label="Avatar" class="avatar-cell">
+              <img
+                src="assets/lisa_real.jpg"
+                alt="Lisa Blackpink Avatar"
+                class="avatar-img"
+              />
+            </td>
+            <td data-label="Student ID">6501000002</td>
+            <td data-label="Name Surname">Lalisa Manobal</td>
+            <td data-label="Nickname">Lisa</td>
+          </tr>
+<!--Latcharit 652115042-->
 
-                <!-- Copy this row to add a new student -->
-                <!-- 
+<tr>
+    <td data-label="Avatar" class="avatar-cell">
+        <img src="assets/Latcharit_Image.jpg" alt="New Student Avatar" class="avatar-img">
+    </td>
+    <td data-label="Student ID">652115042</td>
+    <td data-label="Name Surname">Latcharit Srijai</td>
+    <td data-label="Nickname">Itim</td>
+</tr>
+          <!-- Krittameth 672115002 -->
+          <tr>
+            <td data-label="Avatar" class="avatar-cell">
+              <img
+                src="assets/672115002.jpg"
+                alt="New Student Avatar"
+                class="avatar-img"
+              />
+            </td>
+            <td data-label="Student ID">672115002</td>
+            <td data-label="Name Surname">Krittameth Tansuwan</td>
+            <td data-label="Nickname">Game</td>
+          </tr>
+  
+    
+          <tr>
+            <td data-label="Avatar" class="avatar-cell">
+              <img
+                src="assets/672115501.png"
+                alt="672115501 Avatar"
+                class="avatar-img"
+              />
+            </td>
+            <td data-label="Student ID">672115501</td>
+            <td data-label="Name Surname">Aung Khaing Phyo</td>
+            <td data-label="Nickname">A2</td>
+          </tr>
+          
+<!-- Apitawan 672115050 -->
+    
+    <tr>
+      <td data-label="Avatar" class="avatar-cell">
+        <img src="assets/672115050.jpg" alt="New Student Avatar" class="avatar-img">
+        </td>
+        <td data-label="Student ID">672115050</td>
+        <td data-label="Name Surname">Apitawan Chirakunasin</td>
+        <td data-label="Nickname">Boki</td>
+    </tr>
+
+          <!-- Copy this row to add a new student -->
+          <!-- 
             <tr>
                 <td data-label="Avatar" class="avatar-cell">
                     <img src="assets/avatar_placeholder.png" alt="New Student Avatar" class="avatar-img">
@@ -56,10 +110,20 @@
                 <td data-label="Nickname">Nickname Here</td>
             </tr>
             -->
+
             </tbody>
         </table>
+
+        </tbody>
+      </table>
+
     </div>
 
-</body>
-
+    <script>
+      // Reload page every 30 minutes
+      setInterval(() => {
+        location.reload();
+      }, 30 * 60 * 1000); // 30 minutes in milliseconds
+    </script>
+  </body>
 </html>
